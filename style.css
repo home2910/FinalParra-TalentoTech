@@ -1,0 +1,348 @@
+
+body {
+    display: grid;
+     grid-template-areas: 
+     'header'
+     'main'
+     'footer';
+    font-family: 'Faculty Glyphic', serif;
+    background-color: #016;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: header;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #808080;
+    position: fixed;
+    background-color: #016;
+    top: 0;
+    width: 100%;
+    font-size: larger;
+}
+
+.div-title h1{
+    color: white;
+}
+
+.navbar{
+width: 500px
+
+
+
+}
+
+.navbar ul{
+
+    display: flex;
+    margin: auto;
+    justify-content: space-around
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    transition: all;
+    color: #808080;
+}
+
+.div-socialmedia ul {
+width: 100%;
+display: flex;
+justify-content: center ;
+align-items: center;
+gap: 20px;
+}
+
+.div-socialmedia img{
+    width: 40px;
+}
+
+main {
+    color: white;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.inicio{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    align-items: center;
+     font-size: larger; 
+}
+
+
+
+.inicio img {
+    width: 250px;
+    border-radius: 500px;
+}
+
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+     font-size: larger; 
+}
+
+.aboutme-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger; 
+}
+
+.experience h3 {
+    font-weight: bold;
+}
+
+
+.stack{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      font-size: medium;  
+}
+
+.stack ul{
+    display: grid;
+    grid-template-areas: 
+    'html css js tailwind'
+    'sass react bs py';
+    justify-items: center;
+}
+
+.stack ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.stack ul li img{
+    width: 80px;
+    
+}
+
+.html{
+    grid-area: html;
+}
+
+.css{
+ grid-area: css;
+}
+
+.js{
+grid-area: js;
+}
+
+.tailwind{
+grid-area: tailwind;
+}
+
+.sass{
+grid-area: sass;
+}
+
+.react{
+grid-area: react;
+}
+
+.bs{
+grid-area: bs;
+}
+
+.py{
+grid-area: py;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+     font-size: larger; 
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+
+.contact form input{
+    width: 400px;
+    height: 25px;
+    font-family: 'Faculty Glyphic', serif;
+}
+.contact form textarea{
+    width: 400px;
+    height: 200px;
+}
+
+.contact form button{
+    width: 100px;
+    border: 2px solid black;
+     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.703);
+    padding: 5px;
+    font-family: 'Faculty Glyphic', serif;
+}
+
+
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    border-top: 2px solid #808080;
+    color: white;
+    
+}
+
+
+@media (max-width: 800px){
+    main {
+        color: white;
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 175px;
+    }
+
+    header{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: header;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #808080;
+    position: fixed;
+    background-color: #016;
+    top: 0;
+    width: 100%;
+    font-size: larger;
+}
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center; 
+    }
+
+    .navbar ul li{
+       padding: 2px;
+    } 
+
+    .div-socialmedia ul {
+        width: 80%;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        gap: 20px;
+        }
+    
+    
+    .stack ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 20px;
+    }
+    
+    .stack ul li img{
+        width: 60px;
+        
+    }
+    
+    .html{
+        grid-area: html;
+    }
+    
+    .css{
+     grid-area: css;
+    }
+    
+    .js{
+    grid-area: js;
+    }
+    
+    .tailwind{
+    grid-area: tailwind;
+    }
+    
+    .sass{
+    grid-area: sass;
+    }
+    
+    .react{
+    grid-area: react;
+    }
+    
+    .bs{
+    grid-area: bs;
+    }
+    
+    .py{
+    grid-area: py;
+    }
+    
+
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
